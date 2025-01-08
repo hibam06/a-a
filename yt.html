@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reproducir Video</title>
+    <script>
+        window.onload = function() {
+            // Abrir YouTube usando la URL específica del video
+            var videoURL = "youtube://xvFZjo5PgG0"; // Intento para abrir directamente la app de YouTube
+            window.location.href = videoURL;
+
+            // Redirigir a una URL de respaldo si no abre la app
+            setTimeout(function() {
+                window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
+            }, 500);
+        };
+    </script>
+</head>
+<body>
+    <h1>Reproduciendo Video...</h1>
+</body>
+</html>
